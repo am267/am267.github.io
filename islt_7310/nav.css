@@ -1,22 +1,47 @@
 nav {
     background-color: #2C4758;
     color: #ffffff;
-    border: none;
     list-style: none;
     text-align: center;
     padding: 20px 0 20px 0;
+    height: 90px;
 }
 
-nav > li {
+nav > ul > li {
     display: inline-block;
     padding: 0 25px 0 25px;
+    position: relative;
+    vertical-align: text-top;
 }
 
-nav > li a {
+nav > ul > li a {
     text-decoration: none;
     color:#ffffff;
 }
 
-nav > li > a:hover {
+nav > ul > li > a:hover {
     color: #c1c1c1;
+}
+
+/*below is the dropdown menu nav styling*/
+
+nav > ul > li > ul {
+    padding: 0 5px 0 5px;
+}
+
+nav > ul > li > ul > li {
+    display: block;
+    visibility: hidden;
+}
+nav > ul > li:hover > ul > li {
+    visibility: visible;
+    list-style: none; /*removed bullets from submenu*/
+}
+
+nav > ul > li > ul > li > a:hover {
+    color:#c1c1c1
+}
+navi > ul > li > ul > li > a {
+    text-decoration: none;
+    color:#ffffff;
 }
