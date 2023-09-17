@@ -5,4 +5,45 @@ body {
 }
 h1 {
     color: #1498eb;
+    padding-left: 10px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+#box {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: #2C4758;
+    border: 1px; solid #000000;
+    padding: 3px 0 3px 0;
+    text-align:center;
+}
+
+/*Style the first letter*/
+.subhead::first-letter {
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: rgb(255, 190, 7);
+    margin: 0px 0.1em 0px 0px;
+}
+/*Box model for paragraphs*/
+div.a {
+    border: none;
+    padding: 10px;
+}
+main {
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+}
+
+/*Indent only paragraphs 2 through 4*/
+div.b {
+    text-indent: 50px;
 }
