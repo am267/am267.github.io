@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>About Me</title>
                <link rel="stylesheet" type="text/css" href="style.css">
                <link rel="stylesheet" type="text/css" href="nav.css">
@@ -27,11 +28,16 @@
     <!--Need to update code with #contact-->
     <main>
         <h2>About Me</h2>
+        <div class="flex-container">
         <div id="box">
             <blockquote> <span style="color:#ffffff"><em>I take a broad approach to UX via the intersection of design thinking, information science and user advocacy, where research is key to meaningful design.</em></span></blockquote>
         </div>
-    <p>As a scholar-practitioner with dual graduate degrees in user experience design and information science, my interests include user experience (UX), usability, accessibility, open access publishing, and preservation. My experience includes full-cycle UX research and design practices, including user research, information design, information architecture, interaction design, usability, dissemination, SEO, and documentation. In addition to my strengths in digital publishing and preservation, <strong> my area of specialization is inclusive design</strong>&#8212;the accessibility and usability of information products and services.
-    <br>  
+        </div>
+        <div class="flex-container">
+            <p>As a scholar-practitioner with dual graduate degrees in user experience design and information science, my interests include user experience (UX), usability, accessibility, open access publishing, and preservation. My experience includes full-cycle UX research and design practices, including user research, information design, information architecture, interaction design, usability, dissemination, SEO, and documentation. In addition to my strengths in digital publishing and preservation, <strong> my area of specialization is inclusive design</strong>&#8212;the accessibility and usability of information products and services.</p>
+         </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
         <h3>Education</h3>
         <p><strong>Ph.D. Information Science and Learning Technologies</strong><br>
         <em>University of Missouri (expected 2024)</em></p>
@@ -48,8 +54,18 @@
             User Experience Research, Library Juice Academy, 2020<br>
             Digital Curation, Library Juice Academy, 2020<br>
             Harvard Leadership Institute, 2019
-            </em></p>
-        <p><a href="name7355_cv.pdf" >CV</a></p>
+            </em></p>   
+        </div>
+        <div class="flex-item-right">
+            <video width="200" controls> 
+                <source src="introvideo.mp4" type="video/mp4">
+                      </video>
+                      <br><br>
+                     <div class="center"> 
+                        <a href="name7355_cv.pdf" target="_blank" class="button">CV</a>
+                    </div>
+        </div>
+    </div>
     </main>
     <footer>&#169; 2023</footer>
 </body>
