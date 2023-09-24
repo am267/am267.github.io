@@ -11,28 +11,17 @@ h1 {
 h2 {
     padding-left: 10px;
 }
-/*image responsive*/
-.responsive {
-    max-width: 100%;
-    height: auto;
-  }
 
-  video {
-    width: 100%;
-    height: auto;
-  }
-  .button {
-    background-color: #FFBE07;
-    color: white;
-    padding: 15px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 8px;
-  }
-  
+h4 {
+  color: #1498eb;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*css flexbox for grid in about page*/
 * {
     box-sizing: border-box;
@@ -57,7 +46,69 @@ h2 {
     padding: 20px;
     flex: 50%;
   }
-  
+
+  /* Column container */
+.row-projects {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 8px;
+  }
+  /* Create three equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*indent text*/
+.tab { margin-left: 40px; 
+}
+
+/*unordered lists without bullets*/
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
   /* Responsive layout - makes a one column-layout instead of a two-column layout */
   @media (max-width: 800px) {
     .flex-item-right, .flex-item-left {
@@ -69,9 +120,30 @@ h2 {
       flex-direction: column;
     }
   }
+/*image responsive*/
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
 
+video {
+  width: 100%;
+  height: auto;
+}
+.button {
+  background-color: #FFBE07;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 2px 2px;
+  border-radius: 8px;
+}
 
-#box {
+#box-a {
     display: flex;
     flex-basis: 100px;
     flex-grow: 1;
@@ -80,6 +152,17 @@ h2 {
     padding: 3px 0 3px 0;
     justify-content: center;
     text-align: center;
+}
+/*indented box of questions on Project page*/
+#box-c {
+  display: flex;
+  flex-basis: 100px;
+  flex-grow: 1;
+  background-color: #FFBE07;
+  border: 1px; solid #000000;
+  padding: 3px 0 3px 0;
+  justify-content: center;
+  text-align: left;
 }
 
 /*Style the first letter*/
