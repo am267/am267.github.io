@@ -1,62 +1,64 @@
+/* Desktop Navigation Styles */
 nav {
     background-color: #2C4758;
     color: #ffffff;
     list-style: none;
     text-align: center;
-    padding: 20px 0 20px 0;
-    height: 150px;
+    padding: 20px 0 30px 0;
 }
 
-nav > ul > li {
+#hamburger {
+    display: none;  /* Hide hamburger menu on desktop */
+}
+
+nav > ul.menu > li {
     display: inline-block;
     padding: 0 15px 0 15px;
     position: relative;
     vertical-align: text-top;
 }
 
-nav > ul > li a {
+nav > ul.menu > li > a {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-nav > ul > li > a:hover {
+nav > ul.menu > li > a:hover,
+nav > ul.menu > li > ul > li > a:hover {
     color: #c1c1c1;
 }
 
-/*below is the dropdown menu nav styling*/
-
-nav > ul > li > ul {
-    padding: 0 5px 0 5px;
-}
-
-nav > ul > li > ul > li {
-    display: block;
-    visibility: hidden;
-}
-nav > ul > li:hover > ul > li {
-    visibility: visible;
-    list-style: none; /*removed bullets from submenu*/
-}
-
-nav > ul > li > ul > li > a:hover {
-    color:#c1c1c1
-}
-navi > ul > li > ul > li > a {
-    text-decoration: none;
-    color:#ffffff;
-}
-
-
-/*below is the mobile nav*/
-#hamburger {
+/* Hide the dropdown menu by default */
+nav > ul.menu > li > ul > li {
     display: none;
 }
+
+/* Show dropdown menu on hover */
+nav > ul.menu > li:hover > ul > li {
+    display: block;
+}
+
+/* Mobile Navigation Styles */
+.menu-toggle {
+    display: none;
+}
+
 @media only screen and (max-width: 640px) {
     #hamburger {
-		display: inline-block;
+        display: inline-block;  /* Show hamburger menu on mobile */
+        float: left;
         padding-left: 20px;
         width: 26px;
-        float: left;
         font-size: 2em;
-	}
+    }
+
+    /* Hide regular menu items */
+    nav > ul.menu > li {
+        display: none;
+    }
+
+    /* Show the menu when hamburger is clicked */
+    .menu-toggle:checked ~ ul.menu > li {
+        display: block;
+    }
 }
