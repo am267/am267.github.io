@@ -21,6 +21,9 @@ h4 {
   font-family: 'Roboto', sans-serif;
 }
 
+.footercontent {
+  margin-right: 5px !important;
+}
 img {
   display: block;
   margin-left: auto;
@@ -252,9 +255,11 @@ footer {
 div.b {
     text-indent: 50px;
 }
+/*free content license mail icon image from Canva via Goodware Std used in footer*/
 footer {
-  text-align:center;
-  padding: 3px;
-  background-color:#2C4758;
-  color: #ffffff;
+  display:flex;
+  color: #2C4758;
+  background-image: url("footerimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
