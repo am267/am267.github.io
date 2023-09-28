@@ -20,10 +20,17 @@ h4 {
   color: #1498eb;
   font-family: 'Roboto', sans-serif;
 }
-
 .footercontent {
-  margin-right: 5px !important;
+  margin-right:5px !important;
 }
+
+.footerimg{
+  margin-right:5px !important;
+}
+.footerimg:hover {
+  transform: scale(1.5);
+}
+
 img {
   display: block;
   margin-left: auto;
