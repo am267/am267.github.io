@@ -120,16 +120,19 @@ img {
 }
 
 /*table styling*/
+table {
+  width: 100%;
+}
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
 th, td {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 th {
   background-color: #2C4758;
@@ -205,18 +208,16 @@ ul.no-bullets {
     .flex-item-right, .flex-item-left {
       flex: 100%;
     }
-  }
-  @media (max-widthL 800px) {
     .flex-container {
       flex-direction: column;
     }
-  }
-
-  @media only screen and (max-width:800px); {
   table {
     width:90%;
-    margin-left: 5%;
-    margin-right: 5%;
+  }
+  table,
+  tbody,
+  tr {
+    height:50px;
   }
 }
 
