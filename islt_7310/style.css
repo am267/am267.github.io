@@ -135,7 +135,6 @@ th {
   background-color: #2C4758;
   color: #fff;
 }
-
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -179,9 +178,6 @@ th {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-  }
-  table {
-    overflow: scroll;
   }
 }
 
