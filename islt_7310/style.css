@@ -135,6 +135,10 @@ th {
   background-color: #2C4758;
   color: #fff;
 }
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
