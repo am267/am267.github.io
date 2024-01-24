@@ -255,9 +255,21 @@ video {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin: 40px;
+  margin: 2px 6px;
   border-radius: 8px;
 }
+.button-c {
+  background-color: #FFBE07;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 2px 6px;
+  border-radius: 8px;
+}
+
 #box-a {
     display: flex;
     flex-basis: 100px;
@@ -307,7 +319,13 @@ footer {
   height: 200px;
   border: none; 
 }
-
+.center-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: none; 
+}
 /*Indent only paragraphs 2 through 4*/
 div.b {
     text-indent: 50px;
