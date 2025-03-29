@@ -1,0 +1,90 @@
+/* Desktop Navigation Styles */
+nav {
+    background-color: #2C4758;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+#hamburger {
+    display: none;  /* Hide hamburger menu on desktop */
+}
+ul.menu {  /*this starts the new code for topnav*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2C4758;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #FFBE07;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }   /*this ends the new code for topnav*/
+
+/* Mobile Navigation Styles */
+.menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    #hamburger {
+        display: inline-block;  /* Show hamburger menu on mobile */
+        float: left;
+        padding-left: 10px;
+        width: 36px;
+        font-size: 2em;
+    }
+
+    /* Hide regular menu items */
+    nav > ul.menu > li {
+        display: none;
+    }
+
+    /* Show the menu when hamburger is clicked */
+    .menu-toggle:checked ~ ul.menu > li {
+        display: block;
+    }
+}
